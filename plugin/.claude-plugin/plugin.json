@@ -1,7 +1,7 @@
 {
   "name": "playteam-check",
   "displayName": "PlayTeam Check",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Free, read-only scan of an Android project against the 12 things that most often block a Google Play release.",
   "author": {
     "name": "Delarroc Technologies",

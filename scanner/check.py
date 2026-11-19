@@ -23,7 +23,7 @@ for _s in (sys.stdout, sys.stderr):
     except (AttributeError, ValueError):
         pass
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 REQUIRED_TARGET = 36          # Google Play, new apps and updates since August 31, 2026
 SKIP = {"build", ".gradle", ".git", ".idea", "node_modules", ".dart_tool", "Pods", ".cxx", "intermediates"}
 A = "{http://schemas.android.com/apk/res/android}"

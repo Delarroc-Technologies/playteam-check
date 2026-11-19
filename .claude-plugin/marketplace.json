@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "playteam-check",
-      "source": "./",
+      "source": "./plugin",
       "description": "Free, read-only Google Play pre-release scan for Android projects."
     }
   ]

@@ -1,6 +1,6 @@
 # PlayTeam Check
 
-**Is your Android app ready for Google Play?** A free, read-only [Claude Code](https://claude.com/claude-code) plugin that scans
+**Is your Android app ready for Google Play?** A free, read-only plugin for Claude that reviews
 your project against the 12 things that most often block a release, and tells you what to fix, with the official Google
 page for each point.
 
@@ -27,10 +27,14 @@ In Claude Code:
 
 Then open your Android project and type `/playteam-check:check`, or just ask "is my app ready for Google Play?".
 
-You can also run the scanner on its own (Python 3.9+, no dependency):
+The plugin itself contains no code: it is a skill (in [`plugin/`](plugin)) that tells Claude what to look for, and
+Claude reads your files with its own tools.
+
+You can also run the same 12 checks without Claude, with the standalone scanner in this repository
+(Python 3.9+, no dependency, read-only):
 
 ```
-python3 skills/check/scripts/check.py --root path/to/your/project        # add --json for machine-readable output
+python3 scanner/check.py --root path/to/your/project        # add --json for machine-readable output
 ```
 
 ## The 12 points
@@ -54,7 +58,7 @@ Each point is 🟢 nothing found, 🟠 to check, 🔴 likely rejection, or ⚪ o
 
 ## What it does not do
 
-- It **never changes your project**: no file is written, nothing is built, installed or sent over the network.
+- It **never changes your project**: it only reads files; nothing is written, built, installed or sent over the network.
 - It is a quick static scan, not a full audit: it doesn't see what the merged manifest of your SDKs adds, what data really
   leaves the device, or your translations, UI and security. A green point is not a guarantee of approval.
 - Google's rules change. Requirements were checked against Google's official pages in November 2026; when a linked page
@@ -62,7 +66,8 @@ Each point is 🟢 nothing found, 🟠 to check, 🔴 likely rejection, or ⚪ o
 
 ## Privacy
 
-PlayTeam Check collects no data. It runs locally and makes no network request.
+PlayTeam Check collects no data. The plugin only asks Claude to read your project; the standalone scanner runs locally
+and makes no network request.
 
 ## Want the fixes too?
 
