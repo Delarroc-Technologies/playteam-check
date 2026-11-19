@@ -7,7 +7,9 @@ the `res/values/*.xml` files. "Code" means the `.kt`, `.java`, `.dart`, `.js`, `
 
 ## 1. Closed test (new personal accounts) — ⚪
 
-Can't be read from the code. Ask: "Is your developer account a personal account created after November 13, 2023?"
+Can't be read from the code. Ask first: "Is this app already published in production on Google Play?"
+If yes, this point doesn't apply to an update: mark it 🟢 once the user confirms.
+If not, ask: "Is your developer account a personal account created after November 13, 2023?"
 If yes, the app needs a closed test with at least 12 testers opted in for 14 days in a row before production access.
 Source: https://support.google.com/googleplay/android-developer/answer/14151465
 
@@ -106,6 +108,8 @@ Source: https://play.google.com/about/monetization-ads/payments
 
 ## 12. Content rating and target audience — ⚪
 
-Answered in Play Console only. If the name or strings contain child-directed words (kid, kids, children, toddler,
-preschool, coloring, alphabet), say that the Families rules may apply. Ask who the app is for.
+Answered in Play Console only, but always search the app name, the store listing texts (fastlane, if present) and
+the default `strings.xml` for child-directed words (kid, kids, children, child, toddler, preschool, baby, coloring,
+alphabet, nursery). Report what you searched and what you found: if any appear, say that the Families rules may
+apply; if none, say so. Then ask who the app is for: adults only, or children too.
 Source: https://support.google.com/googleplay/android-developer/answer/9898843
