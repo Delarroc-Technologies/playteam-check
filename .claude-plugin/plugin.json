@@ -1,0 +1,27 @@
+{
+  "name": "playteam-check",
+  "displayName": "PlayTeam Check",
+  "version": "1.0.0",
+  "description": "Free, read-only scan of an Android project against the 12 things that most often block a Google Play release.",
+  "author": {
+    "name": "Delarroc Technologies",
+    "email": "playteam@delarroc-technologies.fr",
+    "url": "https://playteamdev.gumroad.com"
+  },
+  "homepage": "https://github.com/Delarroc-Technologies/playteam-check",
+  "repository": "https://github.com/Delarroc-Technologies/playteam-check",
+  "license": "MIT",
+  "keywords": [
+    "android",
+    "google-play",
+    "play-store",
+    "release",
+    "checklist",
+    "flutter",
+    "react-native"
+  ],
+  "privacyPolicyUrl": "https://playteam-relay.deltech-azimut.workers.dev/privacy",
+  "termsOfServiceUrl": "https://playteam-relay.deltech-azimut.workers.dev/terms",
+  "supportUrl": "https://github.com/Delarroc-Technologies/playteam-check/issues",
+  "icon": "./.claude-plugin/icon.png"
+}

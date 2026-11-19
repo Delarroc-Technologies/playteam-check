@@ -1,0 +1,17 @@
+{
+  "name": "playteam",
+  "owner": {
+    "name": "Delarroc Technologies",
+    "email": "playteam@delarroc-technologies.fr"
+  },
+  "metadata": {
+    "description": "PlayTeam by Delarroc Technologies: tools to get Android apps ready for Google Play."
+  },
+  "plugins": [
+    {
+      "name": "playteam-check",
+      "source": "./",
+      "description": "Free, read-only Google Play pre-release scan for Android projects."
+    }
+  ]
+}
